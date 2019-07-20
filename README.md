@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AngularBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
@@ -26,7 +26,46 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# angular_blog
-用angular 编写的BLOG前端代码
->>>>>>> 252584c63a4824d46245d8a18a62aa4943ebe87e
+
+1. ng new angular-blog
+  * project name can't contain _
+
+2. link github
+	git remote add origin https://github.com/lorenzohee/angular_blog.git
+
+	git pull
+	* if there is an error: 'fatal: refusing to merge unrelated histories'
+	* please use this command: 'git pull origin master --allow-unrelated-histories'
+
+3. add Ivy
+	 1. set the enableIvy option in the angularCompilerOptions in your project's tsconfig.app.json
+	 {
+		  "compilerOptions": { ... },
+		  "angularCompilerOptions": {
+		    "enableIvy": true
+		  }
+		}
+	 2. In the angular.json workspace configuration file, set the default build options for your project to always use AOT compilation.
+	 {
+		  "projects": {
+		    "my-existing-project": {
+		      "architect": {
+		        "build": {
+		          "options": {
+		            ...
+		            "aot": true,
+		          }
+		        }
+		      }
+		    }
+		  }
+		}
+
+4. add material support
+		1. install material by ng
+		ng add @angular/material
+		2. add css file to styles.scss
+			@import '@angular/material/prebuilt-themes/pink-bluegrey.css'
+		3. install material design icons
+			npm install material-design-icons --save
+		4. import icons to css file(set font-face in styles.scss file)
