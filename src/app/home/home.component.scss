@@ -1,0 +1,32 @@
+.header {
+	position: relative;
+	img {
+		position: relative;
+		width: 100%;
+	}
+}
+
+.container{
+	max-width: 1100px;
+	margin: 50px auto;
+	display: flex;
+}
+
+.example-card {
+	max-width: 400px;
+	margin: 0 10px;
+	img {
+		height: 200px;
+	}
+}
+
+.blog_tag_item {
+	font-size: 32px;
+	display: inline-block;
+	width: 300px;
+}
+
+footer {
+	text-align: center;
+	padding: 30px 0;
+}
