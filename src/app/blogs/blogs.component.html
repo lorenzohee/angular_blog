@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="sidebar">
+      <mat-card class="center">
+        <img src="../../../assets/images/avatar.jpeg" alt="" class="avatar-img">
+        <div class="title">凉茶的博客</div>
+        <div class="sub_title">Lorenzo's Blog</div>
+        <div class="sub_link">
+          <span>
+            <mat-icon>cake</mat-icon>
+          </span>
+        </div>
+        <p>我是一个23岁的homeschooler, 爱好旅行以及一切富有创造性的事物，尤其是摄影、设计和编程。这个世界就是我的学校。学自己之所想所爱。自由的身心定能使我成为一个一直朝前行走的行者。</p>
+      </mat-card>
+      <mat-card class="margin-top">
+        <mat-card-header>
+          <mat-card-title>热门标签</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <button mat-stroked-button color="primary" class="border-round margin-xs">需求</button>
+            <a mat-stroked-button color="primary" class="border-round margin-xs" routerLink=".">爱好</a>
+            <a mat-stroked-button color="primary" class="border-round margin-xs" routerLink=".">爱好</a>
+            <button mat-stroked-button color="primary" class="border-round margin-xs">Primary</button>
+            <a mat-stroked-button color="primary" class="border-round margin-xs" routerLink=".">设计和编程</a>
+            <button mat-stroked-button color="primary" class="border-round margin-xs">凉茶</button>
+            <a mat-stroked-button color="primary" class="border-round margin-xs" routerLink=".">我的学校</a>
+            <button mat-stroked-button color="primary" class="border-round margin-xs">Primary</button>
+            <a mat-stroked-button color="primary" class="border-round margin-xs" routerLink=".">Link</a>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="margin-top">
+        <mat-card-header>
+          <mat-card-title>最新文章</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ul style="padding-inline-start: 20px;">
+              <li class="margin-xs">
+                  这是一篇文章
+              </li>
+              <li class="margin-xs">
+                  我是一个23岁的homeschooler
+              </li>
+              <li class="margin-xs">
+                  这个世界就是我的学校
+              </li>
+              <li class="margin-xs">
+                  自由的身心定能使我成为一个一直朝前行走的行者
+              </li>
+              <li class="margin-xs">
+                  Pepper
+              </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

@@ -1,0 +1,21 @@
+mat-card {
+	margin: 0 20px 20px;
+	background: white;
+	color: #4c4c4c;
+	mat-card-title {
+		text-align: center;
+		font-size: 26px;
+		padding: 20px 0;
+	}
+	mat-card-content {
+		font-family: monospace;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	mat-card-footer {
+		margin-top: 30px;
+		border-top: 1px dashed #dbdbdb;
+		padding: 20px;
+		color: #b2b2b2;
+	}
+}

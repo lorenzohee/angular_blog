@@ -1,18 +1,12 @@
-<div class="container">
-	<div class="sidebar">
-		<div class="header">
-			<img src="../../../assets/images/avatar.jpeg" alt="" class="avatar-img">
-			<div class="title">凉茶的博客</div>
-			<div class="sub_title">Lorenzo's Blog</div>
-			<div class="sub_link">
-				<span>
-					<mat-icon>cake</mat-icon>
-				</span>
-			</div>
-			<p>我是一个 23 岁的 homeschooler，爱好旅行以及一切富有创造性的事物，尤其是摄影、设计和编程。这个世界就是我的学校。学自己之所想所爱。自由的身心定能使我成为一个一直朝前行走的行者。</p>
-		</div>
+<mat-card class="blog_item" *ngFor="let blog of blogs">
+	<mat-card-title>
+		<a [routerLink]="['/blogs', blog.id]">{{ blog.title }}</a>
+	</mat-card-title>
+	<mat-card-content>{{ blog.content }}</mat-card-content>
+	<div>
+		<button mat-raised-button color="primary" [routerLink]="['/blogs', blog.id]">阅读更多</button>
 	</div>
-	<div class="content">
-		content
-	</div>
-</div>
+	<mat-card-footer>
+			2019-12-12
+	</mat-card-footer>
+</mat-card>

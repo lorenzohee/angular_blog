@@ -1,1 +1,10 @@
-<p>blog-detail works!</p>
+<mat-card class="blog_item">
+  <mat-card-title>{{ blog && blog.title }}</mat-card-title>
+  <mat-card-content>
+    {{blog && blog.content}}
+  </mat-card-content>
+  <mat-card-footer>
+      {{ blog && blog.create_time }}
+  </mat-card-footer>
+</mat-card>
+  

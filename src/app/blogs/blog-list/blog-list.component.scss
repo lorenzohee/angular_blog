@@ -1,37 +1,25 @@
-.container {
-	display: flex;
-	width: 100%;
-	background: url('../../../assets/images/banner.jpg');
-	.sidebar {
-		width: 300px;
-		background: #0000006e;
-		padding: 20px;
+mat-card {
+	margin: 0 20px 20px;
+	background: white;
+	color: #4c4c4c;
+	mat-card-title {
 		text-align: center;
-		height: 100vh;
-		color: white;
-		.avatar-img {
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-		}
-		.title {
-			margin-top: 20px;
-			font-size: 22px;
-		}
-		.sub_title {
-			font-size: 14px;
-			color: #ddd;
-		}
-		.sub_link {
-			margin-top: 20px;
-		}
-		p{
-			text-align: left;
-			font-size: 14px;
+		font-size: 26px;
+		padding: 20px 0;
+		a {
+			color: #6e6e6e;
+			text-decoration: none;
 		}
 	}
-	.content {
-		background: white;
-		width: 100%;
+	mat-card-content {
+		font-family: monospace;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	mat-card-footer {
+		margin-top: 30px;
+		border-top: 1px dashed #dbdbdb;
+		padding: 20px;
+		color: #b2b2b2;
 	}
 }

@@ -3,3 +3,35 @@
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
   }
+
+  .footer {
+   font-size: 12px;
+   padding: 20px 0;
+   background-color: #232323;
+   color: #888;
+   margin-top: 50px;
+   line-height: 24px;
+   text-align: center;
+}
+
+.footer .wrapper {
+   position: relative;
+}
+
+.wrapper {
+   max-width: 892px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.footer .wrapper:after {
+   display: none;
+   background: url(../assets/images/footer.png) no-repeat center center/cover;
+   position: absolute;
+   bottom: 30px;
+   left: -64px;
+   width: 1040px;
+   pointer-events: none;
+   content: "";
+   height: 315px;
+}
